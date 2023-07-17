@@ -23,9 +23,9 @@
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
 ## Description about the project.
--Installed and configured TypeORM to establish seamless connections with supported databases, with a special focus on MySql.
--Created entities and skillfully mapped them to their respective database tables.
--Successfully executed a wide range of CRUD operations
+<li>Installed and configured TypeORM to establish seamless connections with supported databases, with a special focus on PostgreSQL.</li>
+<li>Created entities and skillfully mapped them to their respective database tables.</li>
+<li>Successfully executed a wide range of CRUD operations.</li>
 
 
 ## License
