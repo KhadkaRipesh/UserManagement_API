@@ -5,7 +5,6 @@ import { Repository } from 'typeorm';
 import { CreateUserDto } from './dto/create-user.dto';
 import { UpdateUserDto } from './dto/update-user.dto';
 
-
 @Injectable()
 export class UsersService {
   constructor(
@@ -22,17 +21,18 @@ export class UsersService {
   }
 
   getOne(id: number) {
-    return this.userRepo.find({ where: { id: id } });
+    // return this.userRepo.find({ where: { id: id } });
+    return this.userRepo.findOneBy({ id: id });
   }
 
   async updateUser(id: number, updateUserDto: UpdateUserDto) {
-    const user = await this.userRepo.findOne({ where: { id: id } });
+    const user = await this.userRepo.findOneBy({ id: id });
     Object.assign(user, updateUserDto);
     return await this.userRepo.save(user);
   }
 
   async deleteUser(id: number) {
-    const user = await this.userRepo.findOne({ where: { id: id } });
+    const user = await this.userRepo.findOneBy({ id: id });
     return await this.userRepo.remove(user);
   }
 }
