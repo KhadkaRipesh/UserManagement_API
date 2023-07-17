@@ -26,6 +26,7 @@
 <li>Installed and configured TypeORM to establish seamless connections with supported databases, with a special focus on PostgreSQL.</li>
 <li>Created entities and skillfully mapped them to their respective database tables.</li>
 <li>Successfully executed a wide range of CRUD operations.</li>
+<h5>Copyright <span>&copy</span>2023, Ripesh Khadka</h5>
 
 
 ## License
